@@ -1,0 +1,9 @@
+- Geen geschiedenis vragen op examen
+- Sockets tegen 9/10
+- Wireshark oefeningen tegen morgen
+- Starlink sneller door low orbit en stationair t.o.v de aarde
+- Packet loss door buffer overload
+- Encapsulatie en decapsulatie belangerijk!
+- OSI/ISO (7 lagen) = TCP/IP met session en presentation laag
+- Skip history
+- UDP voegt poort toe!
