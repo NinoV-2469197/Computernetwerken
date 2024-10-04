@@ -6,4 +6,5 @@
 - Encapsulatie en decapsulatie belangerijk!
 - OSI/ISO (7 lagen) = TCP/IP met session en presentation laag
 - Skip history
-- UDP voegt poort toe!
+- UDP voegt poort toe! (vegelijking tussen gewoon IP gebruiken vs UDP)
+- Browser cached ook fotos, css, html als men terug naar een pagina gaat
