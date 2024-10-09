@@ -1,0 +1,4 @@
+- Meerdere user agents omwille van de browser dat zelf er mee om kan
+- DNS over Udp 
+- Fallback naar tcp als udp niet betrouwbaar is
+- DNS transfers over tcp

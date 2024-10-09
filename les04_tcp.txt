@@ -1,0 +1,25 @@
+- TCP gebruikt identifier
+- Multiplexing op alle lagen, doen het gewoon op andere manier
+- UDP voegt quasie niks aan pakket en kan in verkeerde volgorde aankomen
+- Pakketje kan via verschillende paden aankomen, onder de transport laag en geen sequence number
+- Input buffer op router is vol dan gaan packetjes lost => delivery out of order
+- ACK en round trips kennen
+- Weak protection (in UDP?) wanneer bits geflipt worden om checksums te vergelijken omdat deze identiek zijn
+- !!! 2 partijen weten niks van elkaar (client/server) tenzij ze via berichten uitwisselingen doen waar ook iets mee kan misgaan wat nodig is voor een betrouwbaar protocol.
+- Er werden hiervoor 2 kabels gebruikt, 1 communicatie en 1 data kabel
+- Alles over hetzelfde kanaal is inband ander outbound?.
+- Om uit state te geraken moet er een event gebeuren op zo'n boog, zoals een start state
+- Pijltje is wat de startsituatie is
+- Je moet wachten op signaal of het pakket goed ontvangen is als je errors wilt handlen.
+- NAK gaat packet opnieuw sturen en maakt een lus (rdt2.0: FSM specs)
+- Lambda betekent dat er geen actie moet gebeuren om van state te veranderen, omdat de sender gewoon moet wachten na een ACK
+- Ontvanger heeft 1 toestand omdat die gewoon op data moet wachten
+- Als ACK or NAK verkeerd gestuurd worden dan is dit een fatal flaw
+- Nieuwe data vs oude data
+- Meer redundantie in algoritme is een optie maar maakt het complex
+- Ontvanger moet weten met identifier of het opnieuw verzonden wordt, je doet niet opnieuw delivery data maar wel opnieuw een ACK want anders een deadlock omdat beide partijen op elkaar wachten.
+- Is dit een retransmit , is het nieuw of hetzelfde als de vorige. 1 of 0, begin met 0 dan ACK dan met 1 om onderscheid te maken tussen packetjes.
+- Waarom lambda in formule in rdt3.0 sender slide (iets met blijven wachten voor bericht)
+- Minder capaciteit in terug weg bij cumulatieve ACK
+- 
+
