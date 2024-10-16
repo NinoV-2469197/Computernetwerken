@@ -1,0 +1,18 @@
+- 3.5 - 3.7
+- Waarom bij selective repeat, waarom drop als heel oud packet is?
+- ACK van receiver is waarschijnlijk verloren gegaan waardoor sender opnieuw verstuurd
+- Oud packet is gedelayed aangekomen moet niet geherbevestigd worden (in otherwise: why?) 
+- Blijven wachten voor packet 2 voor we window konden verschuiven
+- Sequence window moet de helft zijn van send window om geen overlap te kunnen hebben en valse ACK van een andere window te bevestigen
+- Eerste segment krijgt willekeurig startnummer voor beveiligingsredenen
+- TCP zegt gebruik cumulatieve ACK dus denk je "Go-back repeat" maar combinatie van Selective en cumulatieve ACK zijn beter
+- Nagle's algorithm!!! PERFORMANTIE
+- why ignore retransmissions: als die corrupted is, je mag alleen de juiste verzendtijden en ontvangtijden combineren
+- TCP wireshark let op het juiste met het juiste te combineren.
+
+TCP 3 way handshake dia
+- Seq, x + 1 omdat de SYN zelf ook een segment van lengte 1 is en uniek onderscheidbaar moet zijn.
+- y in ACKnum ?
+- Er wordt geen data verstuurd, dus geen Seq number bij laatste pijl
+- client op connect doet synsent maar LISTEN hoort daar niet op de dia
+- Till TCP slow start dia.
