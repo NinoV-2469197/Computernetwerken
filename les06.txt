@@ -1,0 +1,22 @@
+TCP congestion Control
+Max segment size
+Cumulatieve handshakes worden niet gehandshaked
+Wordt gekeken naar hoeveel data bevestigd wordt
+64k treshhold bij sender, timeout? treshhold / 2
+3 ACKS wat later binnen aangekomen en moeten we treshhold + 3 doen omdat we de duplicate acks niet mogen vergeten
+Voorkomen dat we meer dan linair groeien dan de formule rechts boven Summary: TCP congestion control
+
+meer data => groter buffer => queue wordt groter => RTT wordt groter
+probeer buffers zo klein mogelijk te maken
+
+cmnd/RTTmin is bitrate?
+
+bitrate that is available is the blue line, together = R 
+R/2 is fair and tries to go to that
+Lower RTT half will have advantage
+
+Evolving transport-layer functionality
+- Examen: Mandatory stuff!!!!
+
+H3 important flow and congestion control EXAMEN!!!!!!!! In detail !!!!
+Invloed op performantie
