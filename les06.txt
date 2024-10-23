@@ -20,3 +20,12 @@ Evolving transport-layer functionality
 
 H3 important flow and congestion control EXAMEN!!!!!!!! In detail !!!!
 Invloed op performantie
+
+
+Deel 2
+default router = default gateway
+forwarding tabel!
+in range => via specifieke lane maar dit is niet goed als er een efficientere lane is. Als het in meerdere past dan sturen we door de beste?
+otherwise => all 0 waarvan er 0 moeten matchen
+.... Niet gevolgd
+
